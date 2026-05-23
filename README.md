@@ -1,27 +1,27 @@
-# FastAPI KR4 — Migrations, Errors, Validation, Tests
+ FastAPI КР4 
 
-Instructions to run the project:
+Инструкции по запуску проекта:
 
-1. Create virtualenv and install dependencies:
+1) Создайте виртуальное окружение и установите зависимости:
 
-```bash
+
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
 
-2. Configure environment (optional): copy `.env.example` to `.env`.
 
-3. Run the app:
+2) Настройка окружения (необязательно): скопируйте .env.example в .env
 
-```bash
+3) Запустить приложение:
+
+
 uvicorn app.main:app --reload
-```
 
-4. Run tests:
 
-```bash
+4) Запустить тесты:
+
+
 pytest -q
-```
 
-Alembic migrations are included in the `alembic/` folder. The DB default is `sqlite:///./test.db`.
+
+Миграции Alembic находятся в папке alembic/. По умолчанию используется база данных sqlite:///./test.db.
